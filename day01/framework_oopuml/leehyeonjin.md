@@ -21,7 +21,8 @@
 
 ### 클래스( Java )
 
-![Untitled.png](..%2F..%2F..%2F..%2F..%2F..%2FDownloads%2FUntitled.png)
+<img width="312" alt="Untitled" src="https://github.com/PragmaticArchive/seasonallearning/assets/90823532/f06d63ee-5fda-49a7-ac20-91b92b68b3a7">
+
 - 클래스( 전역변수 + 함수 = 하나의 타입 ) 중심의 개발 → 객체 단위로 개발이 가능해짐.
 
 ```java
