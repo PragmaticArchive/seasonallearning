@@ -125,3 +125,34 @@
 ## 생성 패턴 Creational Pattern
 
 > Singleton Pattern
+
+- Problem
+  - 해당 클래스 타입의 오브젝트가 단 하나만 생성되어야 하고, 이 오브젝트를 모든 client가 접근 할 수 있어야 한다.
+- Solution
+  - Class 정의 시
+    - Constructor는 private으로 정의한다.
+    - private, static variable를 선언한다.
+    - 해당 instance를 리턴하는 public, static method를 정의한다.
+- Consequences
+  - 유일한 인스턴스를 캡슐화해서 인스턴스 접근 방법, 시점 통제
+  - 다중 스레드 애플리케이션에서 lazy initialization 로직 생성 단계는 동기화 필요
+  - 적극적인 초기화 : eager initialization보다 getInstance로 늦은 초기화 선호
+  - 이유 : 실제로 인스턴스에 접근하지 않는다면 생성작업을 피할 수 있다. getInstance()에서 필요 시 복잡하고 조건적인 생성 로직을 포함할 수 있다.
+
+> Factory Method Pattern
+
+- Problem
+  - 클래스는 생성해야 하는 객체의 클래스를 예상할 수 없다.
+  - 클래스는 자신이 생성하는 객체를 하위 클래스가 지정하기를 원한다.
+  - 복잡한 생성 로직이 있거나 응집도를 높이기 위해 생성 책임을 분리해야 한다.
+- Solution
+  - 인스턴스 만드는 방법은 상위 클래스에서 결정하고 인스턴스를 실제로 생성하는 일은 하위 클래스에서 결정한다.
+  - '구체적인 제품 생성'을 순수 객체 생성의 역할을 하는 '공장'을 통해서 한다.
+- Consequence
+  - Creation Requester Class와 실질적으로 생성될 Concrete Product Object간 독립성 유지
+  - Product Class는 다이나믹하게 변경될 수 있다.
+  - 복잡한 생성에 대한 책임을 응집도가 높은 헬퍼 객체로 분리
+  - 잠재적으로 복잡한 생성 로직 은닉
+  - Factory는 종종 Singleton 패턴을 사용하여 접근
+
+> Builder Pattern
