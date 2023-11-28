@@ -122,6 +122,18 @@
 
 > 04.디자인 패턴 개요 - 구성과 분류
 
+- 디자인 패턴 주요 구성
+
+  - Pattern 이름
+  - Problem
+  - Solution
+  - Consequences
+
+- 분류
+  - 생성 패턴 : 객체의 생성에 관련된 패턴
+  - 구조 패턴 : 클래스를 조합해 더 큰 구조를 만드는 패턴
+  - 행위 패턴 : 알고리즘이나 책임 분배에 관한 패턴
+
 ## 생성 패턴 Creational Pattern
 
 > Singleton Pattern
