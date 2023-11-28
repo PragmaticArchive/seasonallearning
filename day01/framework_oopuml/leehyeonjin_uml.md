@@ -45,7 +45,7 @@
 
 ### UML 다이어그램 종류
 
-![Untitled](UML%2046d90f06a0ac41358902288cedd485e2/Untitled.png)
+<img width="728" alt="Untitled (1)" src="https://github.com/PragmaticArchive/seasonallearning/assets/90823532/59d3eda8-b026-4e24-a45d-455ac05a6362">
 
 1. struct diagrams( 정적 )
 - 시간에 상관없는 정적인 구조를 나타낸다.
@@ -62,11 +62,11 @@
 
 ### Class Diagram
 
-![Untitled](UML%2046d90f06a0ac41358902288cedd485e2/Untitled%201.png)
+<img width="248" alt="Untitled (2)" src="https://github.com/PragmaticArchive/seasonallearning/assets/90823532/942a7ac1-861a-4bb1-a51c-f67e96166e96">
 
 - 클래스의 속성(attribute), 기능(operation)을 표현한다.
 
-![Untitled](UML%2046d90f06a0ac41358902288cedd485e2/Untitled%202.png)
+<img width="440" alt="Untitled (3)" src="https://github.com/PragmaticArchive/seasonallearning/assets/90823532/bd89e38d-35b3-4f77-8323-a485917e2b5a">
 
 - 클래스 끼리의 정적인 관계를 표현한다.
 - UML 표준 규칙 :
@@ -82,7 +82,7 @@
     - `<< 새로운 의미 부여 >>` 형태로 쓴다.
     - 대표적으로 interface 표기.
 
-![Untitled](UML%2046d90f06a0ac41358902288cedd485e2/Untitled%203.png)
+<img width="561" alt="Untitled (4)" src="https://github.com/PragmaticArchive/seasonallearning/assets/90823532/5427045d-89ec-4c5c-9e28-8493ce42c02f">
 
 ```java
 public interface Vehicle {
@@ -120,7 +120,7 @@ class Bike implements Vehicle {
 
 클래스에서 의존 :
 
-![Untitled](UML%2046d90f06a0ac41358902288cedd485e2/Untitled%204.png)
+<img width="507" alt="Untitled (5)" src="https://github.com/PragmaticArchive/seasonallearning/assets/90823532/5aa30bd4-4cc2-414f-aa6d-6516f37fdb60">
 
 - A클래스가 B클래스가 없으면 안되는 상황.
 - B클래스를 변경하면 A클래스를 변경해야할 수도 있음.
@@ -143,17 +143,17 @@ class Bike implements Vehicle {
 
   (1) Local
 
-![Untitled](UML%2046d90f06a0ac41358902288cedd485e2/Untitled%205.png)
+<img width="498" alt="Untitled (6)" src="https://github.com/PragmaticArchive/seasonallearning/assets/90823532/0d7ce5ad-a69d-44f3-96f5-4b9914b731ae">
 
 (2) Parameter
 
-![Untitled](UML%2046d90f06a0ac41358902288cedd485e2/Untitled%206.png)
+<img width="477" alt="Untitled (7)" src="https://github.com/PragmaticArchive/seasonallearning/assets/90823532/c3a7566a-933b-4cf1-a0d0-84ba63a115b7">
 
 (3) Factory
 
-![Untitled](UML%2046d90f06a0ac41358902288cedd485e2/Untitled%207.png)
+<img width="499" alt="Untitled (8)" src="https://github.com/PragmaticArchive/seasonallearning/assets/90823532/49ab9505-4e6c-43d9-a38f-559f2678fba1">
 
-![Untitled](UML%2046d90f06a0ac41358902288cedd485e2/Untitled%208.png)
+<img width="481" alt="Untitled (9)" src="https://github.com/PragmaticArchive/seasonallearning/assets/90823532/9f2b422b-d5a7-49ed-8767-f07ef7a96325">
 
 ```java
 class Factory {
@@ -193,7 +193,7 @@ public class Main01 {
 
 1. Association
 
-![Untitled](UML%2046d90f06a0ac41358902288cedd485e2/Untitled%209.png)
+<img width="551" alt="Untitled (10)" src="https://github.com/PragmaticArchive/seasonallearning/assets/90823532/ceb70316-2b77-48dc-87ac-c4ae751ac63b">
 
 - 다른 클래스를 사용하는데, 참조를 유지하는 방식.
 
@@ -208,7 +208,7 @@ public class Main01 {
 
 1. Composition
 
-![Untitled](UML%2046d90f06a0ac41358902288cedd485e2/Untitled%2010.png)
+<img width="290" alt="Untitled (11)" src="https://github.com/PragmaticArchive/seasonallearning/assets/90823532/2647bbc2-8783-4235-9aae-231d5378c26a">
 
 - 함께 생성되며, 함께 소멸되는 관계.
 - 반드시 존재해야만 하는 관계.
@@ -233,7 +233,7 @@ Interface가 변경되면?
 
 ### Sequence Diagram
 
-![Untitled](UML%2046d90f06a0ac41358902288cedd485e2/Untitled%2011.png)
+<img width="576" alt="Untitled (12)" src="https://github.com/PragmaticArchive/seasonallearning/assets/90823532/a506b467-4c92-47fe-a24a-90cf4e0b5af0">
 
 - 여러 객체들이 어떻게 상호작용 하는지를 나타내는 다이어그램.
 - 시간순서를 나타낸다(위 → 아래).
@@ -247,17 +247,17 @@ Interface가 변경되면?
 4. Return Message : 메시지에 대한 응답 추가( 점선 ).
 5. alternative frame : 분기지점
 
-![Untitled](UML%2046d90f06a0ac41358902288cedd485e2/Untitled%2012.png)
+<img width="255" alt="Untitled (13)" src="https://github.com/PragmaticArchive/seasonallearning/assets/90823532/7d80d53a-d2af-45b4-8cd5-c203c98b1ae3">
 
 1. Activation Box : 객체가 활성상태인지 아닌지 여부를 나타냄.
 
-![Untitled](UML%2046d90f06a0ac41358902288cedd485e2/Untitled%2013.png)
+<img width="320" alt="Untitled (14)" src="https://github.com/PragmaticArchive/seasonallearning/assets/90823532/29d9e797-07d1-4d1d-bf49-75285dd38102">
 
 ---
 
 ### UseCase Diagram
 
-![Untitled](UML%2046d90f06a0ac41358902288cedd485e2/Untitled%2014.png)
+<img width="496" alt="Untitled (15)" src="https://github.com/PragmaticArchive/seasonallearning/assets/90823532/dce4f3e3-8b11-45f4-9eb1-d8dd24e7be09">
 
 - 요구사항을 파악하는 용도.
 - 요구사항을 개념화하는 목적.
