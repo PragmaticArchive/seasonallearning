@@ -49,10 +49,9 @@
 
 ### 3. 3-Tier Architecture vs MVC 패턴
 
-![Untitled](%E1%84%8B%E1%85%A1%E1%84%8F%E1%85%B5%E1%84%90%E1%85%A6%E1%86%A8%E1%84%8E%E1%85%A5%20%E1%84%91%E1%85%A2%E1%84%90%E1%85%A5%E1%86%AB%20d75fa4fd1f2644fa957da53dd216e09d/Untitled.png)
+<img width="693" alt="Untitled" src="https://github.com/PragmaticArchive/seasonallearning/assets/90823532/9c7fcf14-a8bc-45b4-8ef3-e596020ac0d9">
 
 > 물리적으로 3계층이 분리되어있고, 그 안에 MVC가 레이어패턴으로 구성되어 통신 중.
->
 
 (1) 3-Tier Architecture 패턴 :
 
