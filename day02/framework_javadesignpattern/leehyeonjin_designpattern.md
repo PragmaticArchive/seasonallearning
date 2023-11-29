@@ -79,7 +79,7 @@
 
 2. **Factory Method 패턴**
 
-![Untitled](%E1%84%83%E1%85%B5%E1%84%8C%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%91%E1%85%A2%E1%84%90%E1%85%A5%E1%86%AB%200b9032be456c4fd0920131fb4da296da/Untitled.png)
+<img width="895" alt="Untitled (1)" src="https://github.com/PragmaticArchive/seasonallearning/assets/90823532/9c680b4d-9e73-41bd-bc3b-aab959c5f460">
 
 - problem :
     - 클래스는 생성해야 하는 객체의 클래스를 예상할 수 없다.
@@ -99,7 +99,7 @@
 
 3. **Builder 패턴**
 
-![Untitled](%E1%84%83%E1%85%B5%E1%84%8C%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%91%E1%85%A2%E1%84%90%E1%85%A5%E1%86%AB%200b9032be456c4fd0920131fb4da296da/Untitled%201.png)
+<img width="336" alt="Untitled (2)" src="https://github.com/PragmaticArchive/seasonallearning/assets/90823532/4d85baa4-ff43-4edb-8b05-2ed9c9359b0e">
 
 - problem :
     - 복잡한 객체의 생성과정과 표현을 분리.
@@ -171,7 +171,7 @@
 
 1. **Strategy 패턴**
 
-![Untitled](%E1%84%83%E1%85%B5%E1%84%8C%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%91%E1%85%A2%E1%84%90%E1%85%A5%E1%86%AB%200b9032be456c4fd0920131fb4da296da/Untitled%202.png)
+<img width="518" alt="Untitled (3)" src="https://github.com/PragmaticArchive/seasonallearning/assets/90823532/03eb29e5-9674-486c-8478-25de4dbe4b1e">
 
 - problem :
     - 변하지만 서로 관련된 알고리즘이나 정책 설계.
@@ -188,7 +188,7 @@
 
 2. **Template Method 패턴**
 
-![Untitled](%E1%84%83%E1%85%B5%E1%84%8C%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%91%E1%85%A2%E1%84%90%E1%85%A5%E1%86%AB%200b9032be456c4fd0920131fb4da296da/Untitled%203.png)
+<img width="239" alt="Untitled (4)" src="https://github.com/PragmaticArchive/seasonallearning/assets/90823532/d7e72c2a-7601-47bb-9d6e-dd4cad27daa6">
 
 - problem :
     - 부모 클래스에서 알고리즘의 골격을 정의하지만, 해당 알고리즘의 구조를 변경하지 않고 자식 클래스들이 알고리즘의 특정 단계들을 재정의.
@@ -207,7 +207,7 @@
 
 3. **Command 패턴**
 
-![Untitled](%E1%84%83%E1%85%B5%E1%84%8C%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%91%E1%85%A2%E1%84%90%E1%85%A5%E1%86%AB%200b9032be456c4fd0920131fb4da296da/Untitled%204.png)
+<img width="268" alt="Untitled (5)" src="https://github.com/PragmaticArchive/seasonallearning/assets/90823532/186aa97b-ab4e-410c-a2cb-1e3bc039633d">
 
 - problem :
     - 다양한 요청이나 태스크 처리.
@@ -227,7 +227,7 @@
 
 4. **Chain of Responsibility 패턴**
 
-![Untitled](%E1%84%83%E1%85%B5%E1%84%8C%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%91%E1%85%A2%E1%84%90%E1%85%A5%E1%86%AB%200b9032be456c4fd0920131fb4da296da/Untitled%205.png)
+<img width="449" alt="Untitled (6)" src="https://github.com/PragmaticArchive/seasonallearning/assets/90823532/3cd2e227-8608-4b80-a432-f0774d499d06">
 
 - problem :
     - 클라이언트의 요청에 대한 세세한 처리를 하나의 객체가 몽땅 하는 것이 아닌, 여러개의 처리 객체들로 나누고, 이들을 사슬(chain)처럼 연결해 집합 안에서 연쇄적으로 처리.
