@@ -1,6 +1,6 @@
 # Computer Science
 - 운영체제, 컴파일러
-- 네트워크
+- 네트워크
 - 자료구조 - 알고리즘
 - 컴퓨터구조
 - 데이터베이스
@@ -35,7 +35,7 @@
 - 검증 비트를 만든다.
 	- 패리티 비트
 		- 7비트 데이터 중 1인 bit의 개수를 확인하여 홀수 또는 짝수로 만들어 에러를 확인
-	- CRC
+	- CRC
 		- CRC는 방식이 많다.
 		- CRC-8 : `x^8 + x^2 + x^1 + 1
 
@@ -49,7 +49,9 @@
 - Sector : 데이터를 저장하는 공간
 - Arm : Cylinder의 위치 이동
 - Head : Sector의 데이터를 읽고 씀
-![[Pasted image 20231128162407.png]]
+
+<img width="386" alt="Pasted image 20231128162407" src="https://github.com/MadCom96/seasonallearning/assets/70102600/443c3463-bfc1-4367-b1d2-6ca9513a7626">
+
 
 i. Sector (Block)
 파일의 크기가 1KB이더라도 4KB공간을 모두 사용하며, 남은 공간은 의미 없는 데이터로 채운다.
@@ -86,13 +88,17 @@ Disk에 파일을 어떻게 Write할 것인지. 파일을 Read할 때 어떻게 
 각 블록을 연결하는 방식으로, 연속된 빈 블록이 필요없다.
 FAT16, FAT32에서 이 방식을 응용하여 사용한다.
 - FAT : 파일의 데이터 블록을 찾아가는 정보를 저장하고 있는 테이블
-![[Pasted image 20231128165738.png]]
+
+<img width="551" alt="Pasted image 20231128165738" src="https://github.com/MadCom96/seasonallearning/assets/70102600/bb349f6b-7a27-46d3-8c06-7c4518e285a7">
+
 
 
 ##### Indexed Allocation
 Index를 사용하여 파일을 저장하는 방식으로, NTFS에서 이 방식을 응용하여 사용한다.
 - Index Block 하나에 1024개의 블록 번호를 가질 수 있다.
-![[Pasted image 20231128165838.png]]
+
+<img width="313" alt="Pasted image 20231128165838" src="https://github.com/MadCom96/seasonallearning/assets/70102600/d29f7e5e-ec78-45c7-9198-73384ace6ecd">
+
 
 
 
@@ -105,7 +111,9 @@ Index를 사용하여 파일을 저장하는 방식으로, NTFS에서 이 방식
 
 ### Dynamic Partitioning
 고정된 크기로 메모리 공간을 필요한 만큼 동적으로 나누어 사용하는 방식.
-![[Pasted image 20231128170317.png]]
+
+<img width="940" alt="Pasted image 20231128170317" src="https://github.com/MadCom96/seasonallearning/assets/70102600/c0937c1a-76e1-4388-ad78-687b658acc45">
+
 ##### First-Fit
 처음부터 확인해서 할당할 수 있는 공간에 할당하는 방식
 ##### Best-Fit
@@ -132,7 +140,7 @@ Heap : 전역변수, 동적할당/ 높 -> 낮
 메모리에 다음 명령어가 존재하지 않으면 Page Fault가 발생하고, HDD에서 다음 명령어 Page를 가져온다.
 (Swap out, Swap in)
 - 일부 내용만 메모리에 사용하는 이유는 무엇일까?
-	- 프로세스는 일부만 메모리에 올려두고 나머지는 가상 메모리를 사용하는데, 프로세스가 일정 시간 동안 몇 개의 Page만을 참조하기 때문이며, 이를 Locality(지역성)이라 말한다.
+	- 프로세스는 일부만 메모리에 올려두고 나머지는 가상 메모리를 사용하는데, 프로세스가 일정 시간 동안 몇 개의 Page만을 참조하기 때문이며, 이를 Locality(지역성) 이라 말한다.
 - 일부만 필요하다면, 프로그램을 엄청 많이 실행해도 상관 없겠네요?
 	- 프로세스의 수가 증가하면 하나의 프로세스에 할당되는 Frame 수는 줄어들게 되고, 메모리에 올라간 명령어가 적어지므로 Page Fault 수가 증가하며, CPU는 Page Fault를 처리하느라 이용률이 떨어지게 된다. (Thrashing)
 
@@ -157,7 +165,8 @@ page가 참조되는 경우 use bit의 값을 1로 설정하고, 참조되지 �
 
 교체 대상 Page를 찾기 위해서 use bit가 0인 Page를 찾고, use bit가 1이었던 Page를 0으로 변경.
 
-![[Pasted image 20231128175158.png]]
+<img width="740" alt="Pasted image 20231128175158" src="https://github.com/MadCom96/seasonallearning/assets/70102600/c7ab4f73-a3d1-4fe0-b0fc-bace8dc245f4">
+
 
 
 ## Scheduling
@@ -193,11 +202,15 @@ SPN의 선점형 방식이다.
 
 ---
 ### Process Switch
-![[Pasted image 20231128181148.png]]
+
+<img width="1008" alt="Pasted image 20231128181148" src="https://github.com/MadCom96/seasonallearning/assets/70102600/a2b4a317-8bab-41b8-8b6a-cead71b750fb">
+
 
 ### Process Control Block (PCB)
 운영체제 내에서 관리되는 프로세스 구조체
-![[Pasted image 20231128181302.png]]
+
+<img width="273" alt="Pasted image 20231128181302" src="https://github.com/MadCom96/seasonallearning/assets/70102600/7200d517-830a-4a6c-9e7b-c746e0340fe0">
+
 - Process : 자원의 소유자 역할, CPU를 할당하는 대상이 아니다. 실행 코드, 전역 변수, 힙과 같은 자원의 소유주 역할. 하나의 프로세스는 기본적으로 하나의 Main Thread를 갖는다.
 - Thread : CPU에 할당되는 대상으로 하나의 Process는 여러 개의 Thread를 가질 수 있다. 실행 코드, 전역 변수, 힙을 공유하기 때문에 여러 개의 Thread가 동시에 수정하는 경우 조심. Thread Control Block(TCB)에는 함수의 매개변수, 지역변수를 저장하는 영역을 개별적으로 가지고 있음.
 
@@ -206,7 +219,8 @@ SPN의 선점형 방식이다.
 
 ## Layer
 OSI 7 계층 : 물데네전세표응
-![[Pasted image 20231129090555.png]]
+
+![Pasted image 20231129090555](https://github.com/MadCom96/seasonallearning/assets/70102600/2294971b-ae91-4ad5-8be8-f9861b543aa5)
 
 - 계층을 왜 나누는 것일까?
 	- 단계별로 파악하여 흐름을 쉽게 알 수 있으며, 임의의 단계에서 이상이 생기면 해당 단계만 수정할 수 있다. 마치 알고리즘 코드를 작성할 때 Main함수에 전부 작성하냐 아니면 적절히 함수를 나누냐의 문제
@@ -218,8 +232,9 @@ OSI 7 계층 : 물데네전세표응
 HTML 문서를 주고받는데 사용하는 프로토콜
 ##### Transmission Control Protocol (TCP)
 전송을 제어하기 위한 프로토콜이며 신뢰성 있는 통신을 위해 3-Way Handshaking, 4-Way Handshaking을 사용한다.
-![[Pasted image 20231129092405.png]]
-![[Pasted image 20231129092454.png]]
+<img width="996" alt="Pasted image 20231129092405" src="https://github.com/MadCom96/seasonallearning/assets/70102600/dfa92e1a-4bf2-4962-9e32-b3f96b46ec12">
+<img width="951" alt="Pasted image 20231129092454" src="https://github.com/MadCom96/seasonallearning/assets/70102600/317c5677-0f13-41b9-9aaa-75bec272d7b5">
+
 3-Way Handshaking은 연결을 만들기 위해 수행
 4-Way Handshaking은 연결을 해제하기 위해 수행
 - TCP Reliability
@@ -234,7 +249,8 @@ HTML 문서를 주고받는데 사용하는 프로토콜
 	- 해당 Frame 당 하나의 ACK를 보내 서버측의 수신을 확인한다.
 	- 해당 프레임(윈도우)은 수신(서버)측에서 크기를 설정하고 그 크기만큼의 데이터를 먼저 받은 후 ACK를 보내는 것.
 	- 수신 윈도우의 크기보다 작거나 같은 크기로 송신 윈도우를 지정하여 흐름제어
-![[Pasted image 20231129093624.png]]
+
+![Pasted image 20231129093624](https://github.com/MadCom96/seasonallearning/assets/70102600/b44ca8bb-9f41-450a-83f9-3c2b7e701959)
 
 ##### Data Loss, Retransmission - Congestion Control
 **Additive Intrease, Multiple Decrease (AIMD)**
@@ -251,9 +267,13 @@ HTML 문서를 주고받는데 사용하는 프로토콜
 
 ### Internet Protocol (IP)
 패킷이 네트워크를 통해 목적지에 도착할 수 있도록 경로를 지정하기 위한 프로토콜.
-![[Pasted image 20231129094129.png]]
+
+<img width="996" alt="Pasted image 20231129094129" src="https://github.com/MadCom96/seasonallearning/assets/70102600/a3b002d5-9579-4566-bec5-71ef9293ae1d">
+
 - Time to Live (TTL) : 패킷이 살아있는 시간 (홉 지나는 횟수, 홉 : 라우터 간의 이동)
-![[Pasted image 20231129094348.png]]
+
+<img width="610" alt="Pasted image 20231129094348" src="https://github.com/MadCom96/seasonallearning/assets/70102600/69910d3e-e24e-4a18-9483-8e4166bd5e61">
+
 - Transport : TCP
 - Network : IP
 - Data link : MAC
@@ -290,9 +310,12 @@ Path Vector 라우팅 알고리즘을 기반으로 하는 프로토콜.
 ##### Routing Information Protocol (RIP)
 *Distance Vector*
 각 노드마다의 인접거리벡터(1차원)를 가진다.
-![[Pasted image 20231129101234.png]]
-![[Pasted image 20231129101305.png]]
-연결된 노드들의 테이블을 확인해서 그 비용만큼 더해가며 테이블을 갱신시킨다
+
+<img width="391" alt="Pasted image 20231129101234" src="https://github.com/MadCom96/seasonallearning/assets/70102600/c7867d4b-976b-456a-913a-4d5f3c8314b4">
+
+<img width="620" alt="Pasted image 20231129101305" src="https://github.com/MadCom96/seasonallearning/assets/70102600/b375f517-447b-4990-a5cb-09f4f6ce270d">
+
+연결된 노드들의 테이블을 확인해서 그 비용만큼 더해가며 테이블을 갱신시킨다
 
 ##### Open Shortest Path First (OSPF)
 *Link-State(Dijkstra 알고리즘 이용)*
@@ -301,7 +324,11 @@ A에서 가는 가장 짧은 거리를 선택하여 길을 fix한다.
 
 ##### Border Gateway Protocol (BFP)
 *Path Vector*
-![[Pasted image 20231129101914.png]]
+
+<img width="755" alt="Pasted image 20231129101914" src="https://github.com/MadCom96/seasonallearning/assets/70102600/f4485689-ed54-48a3-8b65-96e048280ed6">
+
 경로를 가진다.
 기존의 경로와 이전의 경로를 합쳐 새로 갱신을 해준다.
-![[Pasted image 20231129101956.png]]
+
+<img width="917" alt="Pasted image 20231129101956" src="https://github.com/MadCom96/seasonallearning/assets/70102600/10a08e87-2632-4682-9bfd-db14ca2b90d1">
+
